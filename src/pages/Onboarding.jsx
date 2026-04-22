@@ -173,10 +173,10 @@ export default function Onboarding({ onComplete }) {
                 <span className="plan-card-name">Premium</span>
               </div>
               <div className="plan-card-price">
-                <span className="plan-price-amount">4,99€</span>
+                <span className="plan-price-amount">9,99€</span>
                 <span className="plan-price-period">/ mois</span>
               </div>
-              <div className="plan-trial-badge">14 jours d'essai gratuit</div>
+              <div className="plan-trial-badge">30 jours d'essai gratuit</div>
               <ul className="plan-card-features">
                 {PREMIUM_FEATURES.map((f, i) => (
                   <li key={i}>
@@ -219,7 +219,7 @@ export default function Onboarding({ onComplete }) {
           {step === STEPS.length - 1
             ? "C'est parti ! 🚀"
             : current.type === 'plan' && selectedPlan === 'premium'
-              ? 'Essayer Premium 14 jours'
+              ? 'Essayer Premium 30 jours'
               : 'Continuer'}
         </button>
         {step > 0 && step < STEPS.length - 1 && (
